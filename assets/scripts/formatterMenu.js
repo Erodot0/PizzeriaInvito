@@ -1,5 +1,5 @@
-import { menu } from "./foodCards.js";
-import { createFoodCard, addFoodCards } from "./foodHtml.js";
+import { menu } from "./db.js";
+import { createFoodCard, addFoodCards } from "./injectorMenu.js";
 const menuContWrap = document.querySelector(".menu__content-wrapper")
 
 menu.forEach((section) => {

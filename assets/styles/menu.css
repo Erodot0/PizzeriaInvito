@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;900&display=swap");
+/* Fonts */
+/* Colors */
+/* Font size */
+/* Spacings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fddfb5;
+  color: #946c41;
+}
+
+.menu .menu__content-wrapper {
+  padding: 32px 16px;
+  display: flex;
+  flex-direction: column;
+}
+.menu .menu__content-wrapper .titleSection .menuTitle {
+  cursor: pointer;
+  font-size: 32px;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu .menu__content-wrapper .titleSection .menuTitle .toggler {
+  cursor: pointer;
+}
+.menu .menu__content-wrapper .titleSection .menuTitle .toggler .line {
+  display: block;
+  background-color: #946c41;
+  width: 20px;
+  height: 2px;
+  border-radius: 25%;
+}
+.menu .menu__content-wrapper .titleSection .menuTitle .toggler #line1 {
+  transform: translateY(1.5px);
+}
+.menu .menu__content-wrapper .titleSection .menuTitle .toggler #line2 {
+  transform: rotate(90deg);
+}
+.menu .menu__content-wrapper .titleSection .menuItemsList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+.menu .menu__content-wrapper .titleSection .menuItemsList .menuItems {
+  font-weight: normal;
+  padding: 8px 0;
+}
+.menu .menu__content-wrapper .titleSection .menuItemsList .menuItems .itemName {
+  font-size: 16px;
+  padding-bottom: 2px;
+}
+.menu .menu__content-wrapper .titleSection .menuItemsList .menuItems .itemIngredients {
+  font-size: 10px;
+}
+.menu .menu__content-wrapper .titleSection .menuList-calzoni,
+.menu .menu__content-wrapper .titleSection .menuList-focacce {
+  grid-template-columns: 1fr;
+  text-align: left;
+  padding-top: 6px;
+}
+.menu .menu__content-wrapper .titleSection .menuList-focacce {
+  text-align: left;
+  grid-template-columns: 1fr;
+}
+.menu .menu__content-wrapper .titleSection .menuList-pizzaFamiglia {
+  grid-template-columns: 1fr;
+  text-align: left;
+  padding-top: 6px;
+}
+.menu .menu__content-wrapper .titleSection .menuList-pizzaFamiglia .menuItems {
+  padding: 2px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .menu .menu__content-wrapper {
+    margin: 20px;
+  }
+  .menu .menu__content-wrapper .titleSection .menuTitle {
+    margin: 10px -10px;
+    font-size: 32px;
+    cursor: pointer;
+  }
+  .menu .menu__content-wrapper .titleSection .menuItemsList {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .menu .menu__content-wrapper .titleSection .menuList-calzoni,
+  .menu .menu__content-wrapper .titleSection .menuList-focacce,
+  .menu .menu__content-wrapper .titleSection .menuList-pizzaFamiglia {
+    text-align: left;
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (min-width: 998px) {
+  .menu .menu__content-wrapper {
+    margin: 40px;
+  }
+  .menu .menu__content-wrapper .titleSection .menuTitle {
+    margin: 10px -10px;
+    font-size: 32px;
+  }
+  .menu .menu__content-wrapper .titleSection .menuItemsList {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .menu .menu__content-wrapper .titleSection .menuList-calzoni,
+  .menu .menu__content-wrapper .titleSection .menuList-focacce,
+  .menu .menu__content-wrapper .titleSection .menuList-pizzaFamiglia {
+    text-align: left;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}/*# sourceMappingURL=menu.css.map */
