@@ -1,0 +1,179 @@
+@import '_variables';
+
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a,
+button,
+input,
+li {
+    all: unset;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* general settings */
+
+.section {
+    font-family: $montserrat;
+    padding-top: 72px;
+    padding-bottom: 72px;
+}
+
+.container {
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.highlight {
+    color: $lightRed;
+    text-decoration: underline;
+}
+
+.Lheading {
+    font-size: $Lsize;
+    font-weight: 900;
+}
+
+.Mheading {
+    font-size: $Msize;
+    font-weight: 600;
+}
+
+.Sheading {
+    font-size: $Ssize;
+    font-weight: 600;
+}
+
+.Ltext {
+    font-size: $Lsize;
+}
+
+.Mtext {
+    font-size: $Msize;
+}
+
+.Stext {
+    font-size: $Ssize;
+}
+
+@media screen and (min-width: 768px) {
+
+    .container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .Lheading {
+        font-size: $Lsize * 1.37;
+        font-weight: 900;
+    }
+    
+    .Mheading {
+        font-size: $Msize * 1.37;
+        font-weight: 600;
+    }
+    
+    .Sheading {
+        font-size: $Ssize * 1.37;
+        font-weight: 600;
+    }
+    
+    .Ltext {
+        font-size: $Lsize * 1.37;
+    }
+
+    .Mtext {
+        font-size: $Msize * 1.37;
+    }
+    
+    .Stext {
+        font-size: $Ssize * 1.37;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .container {
+        width: 85%;
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .Lheading {
+        font-size: $Lsize * 1.5;
+        font-weight: 900;
+    }
+    
+    .Mheading {
+        font-size: $Msize * 1.5;
+        font-weight: 600;
+    }
+    
+    .Sheading {
+        font-size: $Ssize * 1.5;
+        font-weight: 600;
+    }
+    
+    .Ltext {
+        font-size: $Lsize * 1.5;
+    }
+
+    .Mtext {
+        font-size: $Msize * 1.5;
+    }
+    
+    .Stext {
+        font-size: $Ssize * 1.5;
+    }  
+}
+
+@media screen and (min-width: 1482px) {
+    .section {
+        padding-top: 128px;
+        padding-bottom: 128px;
+    }
+
+    .container {
+        width: 85%;
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .Lheading {
+        font-size: $Lsize * 1.9;
+        font-weight: 900;
+    }
+    
+    .Mheading {
+        font-size: $Msize * 1.9;
+        font-weight: 600;
+    }
+    
+    .Sheading {
+        font-size: $Ssize * 1.9;
+        font-weight: 600;
+    }
+    
+    .Ltext {
+        font-size: $Lsize * 1.9;
+    }
+
+    .Mtext {
+        font-size: $Msize * 1.9;
+    }
+    
+    .Stext {
+        font-size: $Ssize * 1.9;
+    }  
+
+}

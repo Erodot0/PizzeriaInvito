@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;900&display=swap");
+/* Fonts */
+/* Colors */
+/* Font size */
+/* Spacings */
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a,
+button,
+input,
+li {
+  all: unset;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* general settings */
+.section {
+  font-family: "Montserrat", sans-serif;
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+.container {
+  width: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.highlight {
+  color: #c64337;
+  text-decoration: underline;
+}
+
+.Lheading {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.Mheading {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.Sheading {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.Ltext {
+  font-size: 48px;
+}
+
+.Mtext {
+  font-size: 32px;
+}
+
+.Stext {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .Lheading {
+    font-size: 65.76px;
+    font-weight: 900;
+  }
+  .Mheading {
+    font-size: 43.84px;
+    font-weight: 600;
+  }
+  .Sheading {
+    font-size: 21.92px;
+    font-weight: 600;
+  }
+  .Ltext {
+    font-size: 65.76px;
+  }
+  .Mtext {
+    font-size: 43.84px;
+  }
+  .Stext {
+    font-size: 21.92px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 85%;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .Lheading {
+    font-size: 72px;
+    font-weight: 900;
+  }
+  .Mheading {
+    font-size: 48px;
+    font-weight: 600;
+  }
+  .Sheading {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .Ltext {
+    font-size: 72px;
+  }
+  .Mtext {
+    font-size: 48px;
+  }
+  .Stext {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1482px) {
+  .section {
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
+  .container {
+    width: 85%;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .Lheading {
+    font-size: 91.2px;
+    font-weight: 900;
+  }
+  .Mheading {
+    font-size: 60.8px;
+    font-weight: 600;
+  }
+  .Sheading {
+    font-size: 30.4px;
+    font-weight: 600;
+  }
+  .Ltext {
+    font-size: 91.2px;
+  }
+  .Mtext {
+    font-size: 60.8px;
+  }
+  .Stext {
+    font-size: 30.4px;
+  }
+}/*# sourceMappingURL=preset.css.map */
