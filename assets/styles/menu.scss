@@ -1,0 +1,143 @@
+@import '_variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: $lightBrown ;
+    color: $darkBrown;
+}
+
+.menu {
+    .menu__content-wrapper {
+        padding: $Lspace $Sspace;
+        display: flex;
+        flex-direction: column;
+
+        .titleSection {
+            .menuTitle {
+                cursor: pointer;
+                font-size: $Msize;
+                margin-bottom: $Mspace;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                
+                .toggler {
+                    cursor: pointer;
+
+                    .line {
+                        display: block;
+                        background-color: $darkBrown;
+                        width: 20px;
+                        height: 2px;
+                        border-radius: 25%;
+                    }
+
+                    #line1 {
+                        transform: translateY(1.5px);
+                    }
+
+                    #line2 {
+                        transform: rotate(90deg);
+                    }
+                }
+            }
+
+            .menuItemsList {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: $Sspace;
+
+                .menuItems {
+                    font-weight: normal;
+                    padding: $XSspace 0;
+
+                    .itemName {
+                        font-size: $Ssize ;
+                        padding-bottom: 2px;
+                    }
+
+                    .itemIngredients {
+                        font-size: $XSsize ;
+                    }
+                }
+            }
+
+            .menuList-calzoni,
+            .menuList-focacce {
+                grid-template-columns: 1fr;
+                text-align: left;
+                padding-top: 6px;
+            }
+
+            .menuList-focacce {
+                text-align: left;
+                grid-template-columns: 1fr
+            }
+
+            .menuList-pizzaFamiglia {
+                grid-template-columns: 1fr;
+                text-align: left;
+                padding-top: 6px;
+
+                .menuItems {
+                    padding: 2px 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .menu {
+        .menu__content-wrapper {
+            margin: 20px;
+            .titleSection {
+                
+                .menuTitle {
+                    margin: 10px -10px;
+                    font-size: $Msize;
+                    cursor: pointer;
+                }
+
+                .menuItemsList {
+                    grid-template-columns: 1fr 1fr 1fr;
+                }
+
+                .menuList-calzoni,
+                .menuList-focacce,
+                .menuList-pizzaFamiglia {
+                    text-align: left;
+                    grid-template-columns: 1fr;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 998px) {
+    .menu {
+        .menu__content-wrapper {
+            margin: 40px;
+            .titleSection {
+                
+                .menuTitle {
+                    margin: 10px -10px;
+                    font-size: $Msize;
+                }
+
+                .menuItemsList {
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                }
+
+                .menuList-calzoni,
+                .menuList-focacce,
+                .menuList-pizzaFamiglia {
+                    text-align: left;
+                    grid-template-columns: 1fr 1fr 1fr;
+                }
+            }
+        }
+    }
+}
