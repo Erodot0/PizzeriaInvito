@@ -39,6 +39,7 @@
     <link rel="stylesheet" href="./assets/styles/style.css">
 
     <script defer src="./assets/scripts/toggleNavbar.js"></script>
+    <script defer src="./assets/scripts/lazyLoading.js"></script>
 </head>
 
 <body>
@@ -55,9 +56,9 @@
         <div id="menu">
             <ul class="nav__list Mtext" id="nav__list">
                 <li class="nav__list-item"><a class="link" href="./assets/pages/menu.html">Menu</a></li>
-                <li class="nav__list-item"><a class="link" href="">Ristorante</a></li>
+                <li class="nav__list-item"><a class="link" href="#pizzeria_section">Ristorante</a></li>
                 <li class="nav__list-item"><a class="link" href="#offers_section">Promozioni</a></li>
-                <li class="nav__list-item"><a class="link" href="">Indirizzo</a></li>
+                <li class="nav__list-item"><a class="link" href="#contact_section">Indirizzo</a></li>
             </ul>
         </div>
     </nav>
@@ -71,7 +72,7 @@
                     <p class="subtitle sub2 Stext"><a href="#offers_section">OFFERTE SPECIALI!</a></p>
                 </div>
                 <div class="hero__content-media">
-                    <img class="thumbnail" src="./assets/images/pomodoro.png" alt="happy tomato holding a pizza"
+                    <img class="thumbnail" src="./assets/images/pomodoro_lazy.png" data-src="./assets/images/pomodoro.png" alt="happy tomato holding a pizza"
                         srcset="">
                 </div>
             </div>
@@ -95,7 +96,7 @@
                 </div>
             </div>
             <div class="offers__media">
-                <img class="img" src="./assets/images/negozio.JPG" alt="happy tomato holding a pizza" srcset="">
+                <img class="img" src="./assets/images/negozio_lazy.jpg" data-src="./assets/images/negozio.JPG" alt="happy tomato holding a pizza" srcset="">
             </div>
         </div>
     </section>
@@ -103,7 +104,7 @@
     <section class="section" id="pizzeria_section">
         <div class="pizzeria container">
             <div class="pizzeria__media">
-                <img class="img" src="./assets/images/proprietario.png" alt="happy tomato holding a pizza" srcset="">
+                <img class="img" src="./assets/images/proprietario_lazy.png" data-src="./assets/images/proprietario.png" alt="happy tomato holding a pizza" srcset="">
             </div>
             <div class="pizzeria__content">
                 <h2 class="title Mheading">La Pizzeria</h2>
